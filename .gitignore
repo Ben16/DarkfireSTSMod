@@ -1,0 +1,4 @@
+./lib/DarkfireMod.jar
+*/.idea/*
+./DarkfireMod/DarkfireMod.iml
+*/target/*

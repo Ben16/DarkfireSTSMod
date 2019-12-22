@@ -1,0 +1,6 @@
+{
+  "modid": "darkfire",
+  "name": "Darkfire Mod",
+  "version": "0.1",
+  "dependencies": ["basemod"]
+}
