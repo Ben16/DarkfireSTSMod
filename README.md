@@ -3,6 +3,8 @@ A new character class mod for Slay the Spire. If you haven't played it, you can 
 
 This mod is built using [Basemod](https://github.com/daviscook477/BaseMod/wiki/Installation) and [Mod the Spire](https://github.com/kiooeht/ModTheSpire).
 
+Note: You'll need to add a lib directory with BaseMod and ModTheSpire jars in it in order to build the mod. It'll be built to that directory.
+
 # Details
 I haven't made any real changes yet; when I do, I'll update this section.
 
