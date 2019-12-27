@@ -10,6 +10,8 @@ Note: You'll need to add a lib directory with BaseMod and ModTheSpire jars in it
 The Darkfire is a new character you can select. The selection icon and portrait are my art, as one can probably tell (think of it as placeholder art for an actual artist). The in-game art is just Ironclad, as one can also probably tell.
 
 ## Cards
+* **Ash Spray** - deal 1 damage to each enemy 4 times.
+* **Blaze** - gain 4 strength, lose 1 dexterity.
 * **Ember Shell** - gain 3 Block and inflict 1 Vulnerable.
 
 # References
