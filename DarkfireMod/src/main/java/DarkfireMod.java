@@ -9,6 +9,7 @@ import cards.Blaze;
 import cards.Defend;
 import cards.EmberShell;
 import cards.Strike;
+import cards.WheelingFlame;
 import character.AbstractCardEnum;
 import character.DarkfireCharacter;
 import character.DarkfireEnum;
@@ -33,6 +34,7 @@ public class DarkfireMod implements EditCardsSubscriber, EditCharactersSubscribe
     BaseMod.addCard(new EmberShell());
     BaseMod.addCard(new AshSpray());
     BaseMod.addCard(new Blaze());
+    BaseMod.addCard(new WheelingFlame());
   }
 
   @Override
