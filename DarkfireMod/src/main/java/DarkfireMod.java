@@ -4,7 +4,9 @@ import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
 import basemod.BaseMod;
 import basemod.interfaces.EditCardsSubscriber;
 import basemod.interfaces.EditCharactersSubscriber;
+import cards.Defend;
 import cards.EmberShell;
+import cards.Strike;
 import character.AbstractCardEnum;
 import character.DarkfireCharacter;
 import character.DarkfireEnum;
@@ -24,6 +26,8 @@ public class DarkfireMod implements EditCardsSubscriber, EditCharactersSubscribe
 
   @Override
   public void receiveEditCards() {
+    BaseMod.addCard(new Strike());
+    BaseMod.addCard(new Defend());
     BaseMod.addCard(new EmberShell());
   }
 

@@ -32,8 +32,8 @@ public class EmberShell extends AbstractDarkfireCard {
     AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(m, p, new VulnerablePower(m, this.magicNumber, false), this.magicNumber, true, AbstractGameAction.AttackEffect.NONE));
   }
 
-  public static final int UPGRADE_BLOCK = 1;
-  public static final int UPGRADE_VULNERABLE = 1;
+  private static final int UPGRADE_BLOCK = 1;
+  private static final int UPGRADE_VULNERABLE = 1;
   @Override
   public void upgrade() {
     if (!this.upgraded) {

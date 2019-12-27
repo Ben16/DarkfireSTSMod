@@ -66,11 +66,16 @@ public class DarkfireCharacter extends AbstractPlayer {
   public ArrayList<String> getStartingDeck() {
     ArrayList<String> retVal = new ArrayList<String>(); // empty deck
     // TODO: add an actual starting hand
-    retVal.add("Strike_R"); // color mismatch. Will it work? Idk
-    retVal.add("Strike_R"); // color mismatch. Will it work? Idk
-    retVal.add("Strike_R"); // color mismatch. Will it work? Idk
-    retVal.add("Strike_R"); // color mismatch. Will it work? Idk
-    retVal.add("Strike_R"); // color mismatch. Will it work? Idk
+    retVal.add("darkfire:Strike");
+    retVal.add("darkfire:Strike");
+    retVal.add("darkfire:Strike");
+    retVal.add("darkfire:Strike");
+    retVal.add("darkfire:Strike");
+    retVal.add("darkfire:Defend");
+    retVal.add("darkfire:Defend");
+    retVal.add("darkfire:Defend");
+    retVal.add("darkfire:Defend");
+    retVal.add("darkfire:Defend");
     return retVal;
   }
 
