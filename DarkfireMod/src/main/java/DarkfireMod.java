@@ -1,4 +1,5 @@
 import com.badlogic.gdx.graphics.Color;
+import com.badlogic.gdx.utils.compression.lzma.Base;
 import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
 
 import basemod.BaseMod;
@@ -10,6 +11,12 @@ import cards.Defend;
 import cards.EmberShell;
 import cards.Strike;
 import cards.WheelingFlame;
+import cards.filler.FillerAC;
+import cards.filler.FillerAU;
+import cards.filler.FillerPC;
+import cards.filler.FillerPR;
+import cards.filler.FillerSR;
+import cards.filler.FillerSU;
 import character.AbstractCardEnum;
 import character.DarkfireCharacter;
 import character.DarkfireEnum;
@@ -35,6 +42,14 @@ public class DarkfireMod implements EditCardsSubscriber, EditCharactersSubscribe
     BaseMod.addCard(new AshSpray());
     BaseMod.addCard(new Blaze());
     BaseMod.addCard(new WheelingFlame());
+
+    // filler cards to get the game to run
+    BaseMod.addCard(new FillerAC());
+    BaseMod.addCard(new FillerAU());
+    BaseMod.addCard(new FillerPC());
+    BaseMod.addCard(new FillerPR());
+    BaseMod.addCard(new FillerSR());
+    BaseMod.addCard(new FillerSU());
   }
 
   @Override

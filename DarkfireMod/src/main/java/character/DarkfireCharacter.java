@@ -14,7 +14,6 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.core.EnergyManager;
 import com.megacrit.cardcrawl.core.Settings;
-import com.megacrit.cardcrawl.helpers.CardLibrary;
 import com.megacrit.cardcrawl.helpers.FontHelper;
 import com.megacrit.cardcrawl.helpers.ImageMaster;
 import com.megacrit.cardcrawl.helpers.Prefs;
@@ -27,6 +26,19 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import java.util.ArrayList;
+
+import cards.AshSpray;
+import cards.Blaze;
+import cards.Defend;
+import cards.EmberShell;
+import cards.Strike;
+import cards.WheelingFlame;
+import cards.filler.FillerAC;
+import cards.filler.FillerAU;
+import cards.filler.FillerPC;
+import cards.filler.FillerPR;
+import cards.filler.FillerSR;
+import cards.filler.FillerSU;
 
 public class DarkfireCharacter extends AbstractPlayer {
   public static final Logger logger = LogManager.getLogger(DarkfireCharacter.class.getName());
@@ -111,8 +123,21 @@ public class DarkfireCharacter extends AbstractPlayer {
 
   @Override
   public ArrayList<AbstractCard> getCardPool(ArrayList<AbstractCard> arrayList) {
-    // eventually should not be red cards, but darkfire's. For now, with no cards, use red
-    CardLibrary.addRedCards(arrayList);
+    // make util method to get all darkfire cards
+    arrayList.add(new Strike());
+    arrayList.add(new Defend());
+    arrayList.add(new AshSpray());
+    arrayList.add(new Blaze());
+    arrayList.add(new EmberShell());
+    arrayList.add(new WheelingFlame());
+
+    // these are all filler, just to get the game to not freeze
+    arrayList.add(new FillerAC());
+    arrayList.add(new FillerAU());
+    arrayList.add(new FillerPC());
+    arrayList.add(new FillerPR());
+    arrayList.add(new FillerSR());
+    arrayList.add(new FillerSU());
     return arrayList;
   }
 
