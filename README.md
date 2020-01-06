@@ -12,6 +12,7 @@ The Darkfire is a new character you can select. The selection icon and portrait 
 ## Cards
 * **Ash Spray** - deal 1 damage to each enemy 4 times.
 * **Blaze** - gain 4 strength, lose 1 dexterity.
+* **Burning Shot** - deal 15 damage, exhaust a random card in hand.
 * **Ember Shell** - gain 3 Block and inflict 1 Vulnerable.
 
 # References

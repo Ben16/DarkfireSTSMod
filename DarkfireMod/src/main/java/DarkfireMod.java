@@ -7,6 +7,7 @@ import basemod.interfaces.EditCardsSubscriber;
 import basemod.interfaces.EditCharactersSubscriber;
 import cards.AshSpray;
 import cards.Blaze;
+import cards.BurningShot;
 import cards.Defend;
 import cards.EmberShell;
 import cards.Strike;
@@ -25,6 +26,7 @@ import character.DarkfireEnum;
 public class DarkfireMod implements EditCardsSubscriber, EditCharactersSubscriber {
   public static final Color EVERYTHING_COLOR = new Color(0, 0, (float)0.54, 1);
   public DarkfireMod() {
+    // change the images so the cards look right
     BaseMod.addColor(AbstractCardEnum.DARKFIRE_COLOR, EVERYTHING_COLOR,
             "character/button.png", "character/button.png", "character/button.png", "character/button.png", "character/button.png", "character/button.png", "character/button.png", "character/button.png", "character/button.png");
     BaseMod.subscribe(this);
@@ -42,9 +44,9 @@ public class DarkfireMod implements EditCardsSubscriber, EditCharactersSubscribe
     BaseMod.addCard(new AshSpray());
     BaseMod.addCard(new Blaze());
     BaseMod.addCard(new WheelingFlame());
+    BaseMod.addCard(new BurningShot());
 
     // filler cards to get the game to run
-    BaseMod.addCard(new FillerAC());
     BaseMod.addCard(new FillerAU());
     BaseMod.addCard(new FillerPC());
     BaseMod.addCard(new FillerPR());

@@ -29,6 +29,7 @@ import java.util.ArrayList;
 
 import cards.AshSpray;
 import cards.Blaze;
+import cards.BurningShot;
 import cards.Defend;
 import cards.EmberShell;
 import cards.Strike;
@@ -130,9 +131,9 @@ public class DarkfireCharacter extends AbstractPlayer {
     arrayList.add(new Blaze());
     arrayList.add(new EmberShell());
     arrayList.add(new WheelingFlame());
+    arrayList.add(new BurningShot());
 
     // these are all filler, just to get the game to not freeze
-    arrayList.add(new FillerAC());
     arrayList.add(new FillerAU());
     arrayList.add(new FillerPC());
     arrayList.add(new FillerPR());
