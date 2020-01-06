@@ -27,20 +27,6 @@ import org.apache.logging.log4j.Logger;
 
 import java.util.ArrayList;
 
-import cards.AshSpray;
-import cards.Blaze;
-import cards.BurningShot;
-import cards.Defend;
-import cards.EmberShell;
-import cards.Strike;
-import cards.WheelingFlame;
-import cards.filler.FillerAC;
-import cards.filler.FillerAU;
-import cards.filler.FillerPC;
-import cards.filler.FillerPR;
-import cards.filler.FillerSR;
-import cards.filler.FillerSU;
-
 public class DarkfireCharacter extends AbstractPlayer {
   public static final Logger logger = LogManager.getLogger(DarkfireCharacter.class.getName());
 
@@ -124,21 +110,10 @@ public class DarkfireCharacter extends AbstractPlayer {
 
   @Override
   public ArrayList<AbstractCard> getCardPool(ArrayList<AbstractCard> arrayList) {
-    // make util method to get all darkfire cards
-    arrayList.add(new Strike());
-    arrayList.add(new Defend());
-    arrayList.add(new AshSpray());
-    arrayList.add(new Blaze());
-    arrayList.add(new EmberShell());
-    arrayList.add(new WheelingFlame());
-    arrayList.add(new BurningShot());
-
-    // these are all filler, just to get the game to not freeze
-    arrayList.add(new FillerAU());
-    arrayList.add(new FillerPC());
-    arrayList.add(new FillerPR());
-    arrayList.add(new FillerSR());
-    arrayList.add(new FillerSU());
+    ArrayList<AbstractCard> allCards = util.DarkfireCardList.GetAllCards();
+    for (AbstractCard c : allCards) {
+      arrayList.add(c);
+    }
     return arrayList;
   }
 

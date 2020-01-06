@@ -1,23 +1,13 @@
 import com.badlogic.gdx.graphics.Color;
-import com.badlogic.gdx.utils.compression.lzma.Base;
 import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
+import com.megacrit.cardcrawl.cards.AbstractCard;
+
+import java.util.ArrayList;
 
 import basemod.BaseMod;
 import basemod.interfaces.EditCardsSubscriber;
 import basemod.interfaces.EditCharactersSubscriber;
-import cards.AshSpray;
-import cards.Blaze;
-import cards.BurningShot;
-import cards.Defend;
-import cards.EmberShell;
-import cards.Strike;
-import cards.WheelingFlame;
-import cards.filler.FillerAC;
-import cards.filler.FillerAU;
-import cards.filler.FillerPC;
-import cards.filler.FillerPR;
-import cards.filler.FillerSR;
-import cards.filler.FillerSU;
+
 import character.AbstractCardEnum;
 import character.DarkfireCharacter;
 import character.DarkfireEnum;
@@ -38,20 +28,10 @@ public class DarkfireMod implements EditCardsSubscriber, EditCharactersSubscribe
 
   @Override
   public void receiveEditCards() {
-    BaseMod.addCard(new Strike());
-    BaseMod.addCard(new Defend());
-    BaseMod.addCard(new EmberShell());
-    BaseMod.addCard(new AshSpray());
-    BaseMod.addCard(new Blaze());
-    BaseMod.addCard(new WheelingFlame());
-    BaseMod.addCard(new BurningShot());
-
-    // filler cards to get the game to run
-    BaseMod.addCard(new FillerAU());
-    BaseMod.addCard(new FillerPC());
-    BaseMod.addCard(new FillerPR());
-    BaseMod.addCard(new FillerSR());
-    BaseMod.addCard(new FillerSU());
+    ArrayList<AbstractCard> allCards = util.DarkfireCardList.GetAllCards();
+    for (AbstractCard c : allCards) {
+      BaseMod.addCard(c);
+    }
   }
 
   @Override
