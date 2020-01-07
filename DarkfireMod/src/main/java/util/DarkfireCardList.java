@@ -6,6 +6,7 @@ import java.util.ArrayList;
 
 import cards.AshSpray;
 import cards.Blaze;
+import cards.BlindingFlame;
 import cards.BurningShot;
 import cards.Defend;
 import cards.EmberShell;
@@ -16,11 +17,11 @@ import cards.filler.FillerPC;
 import cards.filler.FillerPR;
 import cards.filler.FillerSR;
 import cards.filler.FillerSU;
+import cards.flames.PurpleFlame;
 
 public class DarkfireCardList {
   public static ArrayList<AbstractCard> GetAllCards() {
     ArrayList<AbstractCard> retVal = new ArrayList<AbstractCard>();
-    // make util method to get all darkfire cards
     retVal.add(new Strike());
     retVal.add(new Defend());
     retVal.add(new AshSpray());
@@ -28,13 +29,19 @@ public class DarkfireCardList {
     retVal.add(new EmberShell());
     retVal.add(new WheelingFlame());
     retVal.add(new BurningShot());
+    retVal.add(new BlindingFlame());
 
     // these are all filler, just to get the game to not freeze
     retVal.add(new FillerAU());
     retVal.add(new FillerPC());
     retVal.add(new FillerPR());
     retVal.add(new FillerSR());
-    retVal.add(new FillerSU());
+    return retVal;
+  }
+
+  public static ArrayList<AbstractCard> GetAllFlameCards() {
+    ArrayList<AbstractCard> retVal = new ArrayList<AbstractCard>();
+    retVal.add(new PurpleFlame());
     return retVal;
   }
 }

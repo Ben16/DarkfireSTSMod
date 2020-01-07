@@ -32,6 +32,11 @@ public class DarkfireMod implements EditCardsSubscriber, EditCharactersSubscribe
     for (AbstractCard c : allCards) {
       BaseMod.addCard(c);
     }
+
+    ArrayList<AbstractCard> flameCards = util.DarkfireCardList.GetAllFlameCards();
+    for (AbstractCard c : flameCards) {
+      BaseMod.addCard(c);
+    }
   }
 
   @Override
