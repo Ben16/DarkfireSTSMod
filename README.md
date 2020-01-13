@@ -17,7 +17,9 @@ The Darkfire is a new character you can select. The selection icon and portrait 
 * **Ember Shell** - gain 3 Block and inflict 1 Vulnerable.
 
 ### Flames
+* **Blue Flame** - gain 5 block.
 * **Purple Flame** - deal 6 damage.
+* **Yellow Flame** - gain 1 energy.
 
 # References
 I used the [Basemod wiki](https://github.com/daviscook477/BaseMod/wiki/Getting-Started-(For-Modders)

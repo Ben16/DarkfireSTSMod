@@ -16,8 +16,9 @@ import cards.filler.FillerAU;
 import cards.filler.FillerPC;
 import cards.filler.FillerPR;
 import cards.filler.FillerSR;
-import cards.filler.FillerSU;
+import cards.flames.BlueFlame;
 import cards.flames.PurpleFlame;
+import cards.flames.YellowFlame;
 
 public class DarkfireCardList {
   public static ArrayList<AbstractCard> GetAllCards() {
@@ -42,6 +43,8 @@ public class DarkfireCardList {
   public static ArrayList<AbstractCard> GetAllFlameCards() {
     ArrayList<AbstractCard> retVal = new ArrayList<AbstractCard>();
     retVal.add(new PurpleFlame());
+    retVal.add(new BlueFlame());
+    retVal.add(new YellowFlame());
     return retVal;
   }
 }
