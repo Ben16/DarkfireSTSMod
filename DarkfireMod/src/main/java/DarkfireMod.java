@@ -18,7 +18,7 @@ public class DarkfireMod implements EditCardsSubscriber, EditCharactersSubscribe
   public DarkfireMod() {
     // change the images so the cards look right
     BaseMod.addColor(AbstractCardEnum.DARKFIRE_COLOR, EVERYTHING_COLOR,
-            "character/button.png", "character/button.png", "character/button.png", "character/button.png", "character/button.png", "character/button.png", "character/button.png", "character/button.png", "character/button.png");
+            "card_bg/attack_bg.png", "card_bg/attack_bg.png", "card_bg/attack_bg.png", "card_bg/card_orb.png", "card_bg/attack_bg.png", "card_bg/attack_bg.png", "card_bg/attack_bg.png", "card_bg/attack_bg.png", "card_bg/attack_bg.png");
     BaseMod.subscribe(this);
   }
 
