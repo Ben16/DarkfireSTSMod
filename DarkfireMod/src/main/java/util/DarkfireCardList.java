@@ -7,6 +7,7 @@ import java.util.ArrayList;
 import cards.AshSpray;
 import cards.Blaze;
 import cards.BlindingFlame;
+import cards.BurningForm;
 import cards.BurningShot;
 import cards.Defend;
 import cards.EmberShell;
@@ -31,11 +32,11 @@ public class DarkfireCardList {
     retVal.add(new WheelingFlame());
     retVal.add(new BurningShot());
     retVal.add(new BlindingFlame());
+    retVal.add(new BurningForm());
 
     // these are all filler, just to get the game to not freeze
     retVal.add(new FillerAU());
     retVal.add(new FillerPC());
-    retVal.add(new FillerPR());
     retVal.add(new FillerSR());
     return retVal;
   }

@@ -13,6 +13,7 @@ The Darkfire is a new character you can select. The selection icon and portrait 
 * **Ash Spray** - deal 1 damage to each enemy 4 times.
 * **Blaze** - gain 4 strength, lose 1 dexterity.
 * **Blinding Flames** - inflict 1 Weak on all enemies and add 2 flames to hand.
+* **Burning Form** - gain 1 flame card at the start of each turn.
 * **Burning Shot** - deal 15 damage, exhaust a random card in hand.
 * **Ember Shell** - gain 3 Block and inflict 1 Vulnerable.
 
@@ -20,6 +21,9 @@ The Darkfire is a new character you can select. The selection icon and portrait 
 * **Blue Flame** - gain 5 block.
 * **Purple Flame** - deal 6 damage.
 * **Yellow Flame** - gain 1 energy.
+
+## Powers
+* **Burning** - gain a flame card at the start of each turn
 
 # References
 I used the [Basemod wiki](https://github.com/daviscook477/BaseMod/wiki/Getting-Started-(For-Modders)
