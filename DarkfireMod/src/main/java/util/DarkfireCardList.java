@@ -11,11 +11,10 @@ import cards.BurningForm;
 import cards.BurningShot;
 import cards.Defend;
 import cards.EmberShell;
+import cards.FlareStorm;
 import cards.Strike;
 import cards.WheelingFlame;
-import cards.filler.FillerAU;
 import cards.filler.FillerPC;
-import cards.filler.FillerPR;
 import cards.filler.FillerSR;
 import cards.flames.BlueFlame;
 import cards.flames.PurpleFlame;
@@ -33,9 +32,9 @@ public class DarkfireCardList {
     retVal.add(new BurningShot());
     retVal.add(new BlindingFlame());
     retVal.add(new BurningForm());
+    retVal.add(new FlareStorm());
 
     // these are all filler, just to get the game to not freeze
-    retVal.add(new FillerAU());
     retVal.add(new FillerPC());
     retVal.add(new FillerSR());
     return retVal;
