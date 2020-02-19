@@ -10,7 +10,7 @@ import org.apache.logging.log4j.Logger;
 import actions.GetFlames;
 import character.DarkfireCharacter;
 
-public class BurningPower extends AbstractPower {
+public class BurningPower extends AbstractDarkfirePower {
   public static final Logger logger = LogManager.getLogger(DarkfireCharacter.class.getName());
   public static final String POWER_ID = "darkfireMod:Burning";
   public static final String NAME = "Burning";
@@ -31,7 +31,7 @@ public class BurningPower extends AbstractPower {
 
     updateDescription();
     //load file when you have it
-    loadRegion("poison"); // need to change this somehow
+    loadIcon("burning"); // need to change this somehow
     this.type = AbstractPower.PowerType.BUFF;
     this.isTurnBased = true;
   }

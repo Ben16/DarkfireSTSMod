@@ -245,7 +245,6 @@ public class DarkfireCharacter extends AbstractPlayer {
 
   @Override
   public AbstractPlayer newInstance() {
-    // TODO: return instance of this character
     return new DarkfireCharacter(NAME);
   }
 
