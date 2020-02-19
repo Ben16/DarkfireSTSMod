@@ -17,6 +17,7 @@ The Darkfire is a new character you can select. The selection icon and portrait 
 * **Burning Shot** - deal 15 damage, exhaust a random card in hand.
 * **Ember Shell** - gain 3 Block and inflict 1 Vulnerable.
 * **Flare Storm** - deal 2 damage X times. Gain X flames.
+* **Wheeling Flame** - deal 10 damage and draw 2 cards.
 
 ### Flames
 * **Blue Flame** - gain 5 block.
