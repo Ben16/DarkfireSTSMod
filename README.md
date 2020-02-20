@@ -22,6 +22,7 @@ The Darkfire is a new character you can select. The selection icon and portrait 
 ### Flames
 * **Blue Flame** - gain 5 block.
 * **Purple Flame** - deal 6 damage.
+* **Red Flame** - inflict 1 vulnerable.
 * **Yellow Flame** - gain 1 energy.
 
 ## Powers

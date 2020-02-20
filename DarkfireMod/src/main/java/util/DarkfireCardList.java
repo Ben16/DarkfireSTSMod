@@ -18,6 +18,7 @@ import cards.filler.FillerPC;
 import cards.filler.FillerSR;
 import cards.flames.BlueFlame;
 import cards.flames.PurpleFlame;
+import cards.flames.RedFlame;
 import cards.flames.YellowFlame;
 
 public class DarkfireCardList {
@@ -45,6 +46,7 @@ public class DarkfireCardList {
     retVal.add(new PurpleFlame());
     retVal.add(new BlueFlame());
     retVal.add(new YellowFlame());
+    retVal.add(new RedFlame());
     return retVal;
   }
 }
