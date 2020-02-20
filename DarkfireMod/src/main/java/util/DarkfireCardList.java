@@ -17,6 +17,7 @@ import cards.WheelingFlame;
 import cards.filler.FillerPC;
 import cards.filler.FillerSR;
 import cards.flames.BlueFlame;
+import cards.flames.GreenFlame;
 import cards.flames.PurpleFlame;
 import cards.flames.RedFlame;
 import cards.flames.YellowFlame;
@@ -47,6 +48,7 @@ public class DarkfireCardList {
     retVal.add(new BlueFlame());
     retVal.add(new YellowFlame());
     retVal.add(new RedFlame());
+    retVal.add(new GreenFlame());
     return retVal;
   }
 }
