@@ -1,0 +1,50 @@
+{
+  "darkfire:AshSpray": {
+    "NAME":"Ash Spray",
+    "DESCRIPTION":"Deal !D! damage to all enemies !M! times."
+  },
+  "darkfire:Blaze": {
+    "NAME":"Blaze",
+    "DESCRIPTION":"Gain !M! Strength and lose 1 Dexterity."
+  },
+  "darkfire:BlindingFlame": {
+    "NAME":"Blinding Flame",
+    "DESCRIPTION":"Inflict !M! Weak on all enemies. Add 2 random flames to your hand."
+  },
+  "darkfire:BurningForm": {
+    "NAME":"Burning Form",
+    "DESCRIPTION":"At the start of each turn, add !M! random flame to your hand."
+  },
+  "darkfire:BurningShot": {
+    "NAME":"Burning Shot",
+    "DESCRIPTION":"Deal !D! damage and exhaust !M! random card in your hand."
+  },
+  "darkfire:Defend": {
+    "NAME":"Defend",
+    "DESCRIPTION":"Gain !B! block."
+  },
+  "darkfire:EmberShell": {
+    "NAME":"Ember Shell",
+    "DESCRIPTION":"Gain !B! Block and inflict !M! Vulnerable."
+  },
+  "darkfire:FlareStorm": {
+    "NAME":"Flare Storm",
+    "DESCRIPTION":"Deal !D! damage [E] times. Add [E] flames to your hand."
+  },
+  "darkfire:Strike": {
+    "NAME":"Strike",
+    "DESCRIPTION":"Deal !D! damage."
+  },
+  "darkfire:WheelingFlame": {
+    "NAME":"Wheeling Flame",
+    "DESCRIPTION":"Deal !D! damage and draw !M! cards."
+  },
+  "darkfire:FillerPC": {
+    "NAME":"Filler",
+    "DESCRIPTION":"Filler text."
+  },
+  "darkfire:FillerSR": {
+    "NAME":"Filler",
+    "DESCRIPTION":"Filler text."
+  }
+}

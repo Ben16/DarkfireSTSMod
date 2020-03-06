@@ -11,10 +11,8 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
 public class AshSpray extends AbstractDarkfireCard {
   private static final String ID = "darkfire:AshSpray";
-  private static final String NAME = "Ash Spray";
   private static final String IMG_PATH = "cards/ash_spray.png";
   private static final int COST = 1;
-  private static final String DESCRIPTION = "Deal 2 damage 4 times.";
   private static final CardType TYPE = CardType.ATTACK;
   private static final CardRarity RARITY = CardRarity.COMMON;
   private static final CardTarget TARGET = CardTarget.ALL_ENEMY;
@@ -22,7 +20,7 @@ public class AshSpray extends AbstractDarkfireCard {
   private static int ATTACK_TIMES = 4;
 
   public AshSpray() {
-    super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, RARITY, TARGET);
+    super(ID, IMG_PATH, COST, TYPE, RARITY, TARGET);
     this.damage = this.baseDamage = DAMAGE;
     this.magicNumber = this.baseMagicNumber = ATTACK_TIMES;
 

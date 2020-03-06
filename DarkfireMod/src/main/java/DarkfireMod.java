@@ -1,6 +1,7 @@
 import com.badlogic.gdx.graphics.Color;
 import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
 import com.megacrit.cardcrawl.cards.AbstractCard;
+import com.megacrit.cardcrawl.localization.CardStrings;
 
 import java.util.ArrayList;
 
@@ -8,12 +9,13 @@ import basemod.BaseMod;
 import basemod.interfaces.EditCardsSubscriber;
 import basemod.interfaces.EditCharactersSubscriber;
 
+import basemod.interfaces.EditStringsSubscriber;
 import character.AbstractCardEnum;
 import character.DarkfireCharacter;
 import character.DarkfireEnum;
 
 @SpireInitializer
-public class DarkfireMod implements EditCardsSubscriber, EditCharactersSubscriber {
+public class DarkfireMod implements EditCardsSubscriber, EditCharactersSubscriber, EditStringsSubscriber {
   public static final Color EVERYTHING_COLOR = new Color(0, 0, (float)0.54, 1);
   public DarkfireMod() {
     // change the images so the cards look right
@@ -43,5 +45,10 @@ public class DarkfireMod implements EditCardsSubscriber, EditCharactersSubscribe
   public void receiveEditCharacters() {
     BaseMod.addCharacter(new DarkfireCharacter("Darkfire"), "character/button.png",
             "character/darkfire.png", DarkfireEnum.DARKFIRE);
+  }
+
+  @Override
+  public void receiveEditStrings() {
+    BaseMod.loadCustomStringsFile(CardStrings.class, "strings/english/cards.json");
   }
 }

@@ -14,10 +14,8 @@ import com.megacrit.cardcrawl.powers.StrengthPower;
 
 public class Blaze extends AbstractDarkfireCard {
   private static final String ID = "darkfire:Blaze";
-  private static final String NAME = "Blaze";
   private static final String IMG_PATH = "cards/blaze.png";
   private static final int COST = 1;
-  private static final String DESCRIPTION = "Gain 4 Strength and lose 1 Dexterity.";
   private static final CardType TYPE = CardType.POWER;
   private static final CardRarity RARITY = CardRarity.UNCOMMON;
   private static final CardTarget TARGET = CardTarget.SELF;
@@ -25,7 +23,7 @@ public class Blaze extends AbstractDarkfireCard {
   private static final int DEXTERITY = -1;
 
   public Blaze() {
-    super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, RARITY, TARGET);
+    super(ID, IMG_PATH, COST, TYPE, RARITY, TARGET);
     this.magicNumber = this.baseMagicNumber = STRENGTH;
   }
 

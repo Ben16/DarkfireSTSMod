@@ -8,17 +8,15 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 public class Defend extends AbstractDarkfireCard {
 
   private static final String ID = "darkfire:Defend";
-  private static final String NAME = "Defend";
   private static final String IMG_PATH = "cards/defend.png";
   private static final int COST = 1;
-  private static final String DESCRIPTION = "Gain 5 block.";
   private static final CardType TYPE = CardType.SKILL;
   private static final CardRarity RARITY = CardRarity.BASIC;
   private static final CardTarget TARGET = CardTarget.SELF;
   private static final int BLOCK = 5;
 
   public Defend() {
-    super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, RARITY, TARGET);
+    super(ID, IMG_PATH, COST, TYPE, RARITY, TARGET);
     this.block = this.baseBlock = BLOCK;
   }
 

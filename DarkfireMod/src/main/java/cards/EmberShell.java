@@ -10,10 +10,8 @@ import com.megacrit.cardcrawl.powers.VulnerablePower;
 public class EmberShell extends AbstractDarkfireCard {
 
   private static final String ID = "darkfire:EmberShell";
-  private static final String NAME = "Ember Shell";
   private static final String IMG_PATH = "cards/ember_shell.png";
   private static final int COST = 0;
-  private static final String DESCRIPTION = "Gain 3 Block and inflict 1 Vulnerable.";
   private static final CardType TYPE = CardType.SKILL;
   private static final CardRarity RARITY = CardRarity.COMMON;
   private static final CardTarget TARGET = CardTarget.ENEMY;
@@ -21,7 +19,7 @@ public class EmberShell extends AbstractDarkfireCard {
   private static final int VULNERABLE = 1;
 
   public EmberShell() {
-    super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, RARITY, TARGET);
+    super(ID, IMG_PATH, COST, TYPE, RARITY, TARGET);
     this.magicNumber = this.baseMagicNumber = VULNERABLE;
     this.block = this.baseBlock = BLOCK;
   }

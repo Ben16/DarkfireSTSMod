@@ -9,10 +9,8 @@ import actions.FlareStormAction;
 public class FlareStorm extends AbstractDarkfireCard {
 
   private static final String ID = "darkfire:FlareStorm";
-  private static final String NAME = "Flare Storm";
   private static final String IMG_PATH = "cards/flare_storm.png";
   private static final int COST = -1;
-  private static final String DESCRIPTION = "Deal 2 damage X times. Add X flames to your hand.";
   private static final CardType TYPE = CardType.ATTACK;
   private static final CardRarity RARITY = CardRarity.UNCOMMON;
   private static final CardTarget TARGET = CardTarget.ENEMY;
@@ -21,7 +19,7 @@ public class FlareStorm extends AbstractDarkfireCard {
   private static final int ENERGY_ON_USE = -1;
 
   public FlareStorm() {
-    super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, RARITY, TARGET);
+    super(ID, IMG_PATH, COST, TYPE, RARITY, TARGET);
     this.damage = this.baseDamage = DAMAGE;
     this.isMultiDamage = true;
   }

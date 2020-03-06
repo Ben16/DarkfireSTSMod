@@ -9,17 +9,15 @@ import cards.AbstractDarkfireCard;
 
 public class FillerSR extends AbstractDarkfireCard {
   private static final String ID = "darkfire:FillerSR";
-  private static final String NAME = "Filler";
   private static final String IMG_PATH = "cards/filler.png";
   private static final int COST = 1;
-  private static final String DESCRIPTION = "Filler text.";
   private static final CardType TYPE = CardType.SKILL;
   private static final CardRarity RARITY = CardRarity.RARE;
   private static final CardTarget TARGET = CardTarget.SELF;
   private static final int BLOCK = 1;
 
   public FillerSR() {
-    super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, RARITY, TARGET);
+    super(ID, IMG_PATH, COST, TYPE, RARITY, TARGET);
     this.block = this.baseBlock = BLOCK;
   }
 
