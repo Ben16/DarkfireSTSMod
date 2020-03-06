@@ -19,9 +19,8 @@ import character.DarkfireEnum;
 public class DarkfireMod implements EditCardsSubscriber, EditCharactersSubscriber, EditStringsSubscriber {
   public static final Color EVERYTHING_COLOR = new Color(0, 0, (float)0.54, 1);
   public DarkfireMod() {
-    // change the images so the cards look right
     BaseMod.addColor(AbstractCardEnum.DARKFIRE_COLOR, EVERYTHING_COLOR,
-            "card_bg/attack_bg.png", "card_bg/attack_bg.png", "card_bg/attack_bg.png", "card_bg/card_orb.png", "card_bg/attack_bg.png", "card_bg/attack_bg.png", "card_bg/attack_bg.png", "card_bg/attack_bg.png", "card_bg/attack_bg.png");
+            "card_bg/attack_bg.png", "card_bg/attack_bg.png", "card_bg/attack_bg.png", "card_bg/card_orb.png", "card_bg/attack_bg.png", "card_bg/attack_bg.png", "card_bg/attack_bg.png", "character/energy_orb.png", "character/energy_orb.png");
     BaseMod.subscribe(this);
   }
 
