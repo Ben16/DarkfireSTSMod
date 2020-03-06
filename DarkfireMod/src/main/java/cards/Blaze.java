@@ -30,7 +30,7 @@ public class Blaze extends AbstractDarkfireCard {
   @Override
   public void use(AbstractPlayer p, AbstractMonster m) {
     AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new StrengthPower(p, this.magicNumber), this.magicNumber));
-    AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new DexterityPower(p, this.DEXTERITY), this.magicNumber));
+    AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new DexterityPower(p, this.DEXTERITY), this.DEXTERITY));
   }
 
   private static int UPGRADE_STRENGTH = 1;
