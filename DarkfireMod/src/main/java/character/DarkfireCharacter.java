@@ -30,8 +30,8 @@ import java.util.ArrayList;
 public class DarkfireCharacter extends AbstractPlayer {
   public static final Logger logger = LogManager.getLogger(DarkfireCharacter.class.getName());
 
-  public static final String NAME = "The Darkfire";
-  public static final String DESCRIPTION = "A warrior who burns with unending flame.";
+  public static final String NAME = CardCrawlGame.languagePack.getCharacterString("Darkfire").NAMES[0];
+  public static final String DESCRIPTION = CardCrawlGame.languagePack.getCharacterString("Darkfire").TEXT[0];
   public static final int MAX_HP = 70;
   public static final int MAX_ORBS = 0;
   public static final int GOLD = 100;
@@ -230,7 +230,7 @@ public class DarkfireCharacter extends AbstractPlayer {
 
   @Override
   public CharacterStrings getCharacterString() {
-    return CardCrawlGame.languagePack.getCharacterString("Ironclad");
+    return CardCrawlGame.languagePack.getCharacterString("Darkfire");
   }
 
   @Override
@@ -255,7 +255,7 @@ public class DarkfireCharacter extends AbstractPlayer {
 
   @Override
   public String getSpireHeartText() {
-    return "hearty heart heart";
+    return CardCrawlGame.languagePack.getCharacterString("Darkfire").TEXT[1];
   }
 
   @Override
@@ -270,6 +270,6 @@ public class DarkfireCharacter extends AbstractPlayer {
 
   @Override
   public String getVampireText() {
-    return "vampire ooh spooky";
+    return CardCrawlGame.languagePack.getCharacterString("Darkfire").TEXT[2];
   }
 }

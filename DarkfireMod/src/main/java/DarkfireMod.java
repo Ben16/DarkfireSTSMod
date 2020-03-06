@@ -2,6 +2,7 @@ import com.badlogic.gdx.graphics.Color;
 import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.localization.CardStrings;
+import com.megacrit.cardcrawl.localization.CharacterStrings;
 
 import java.util.ArrayList;
 
@@ -50,5 +51,6 @@ public class DarkfireMod implements EditCardsSubscriber, EditCharactersSubscribe
   @Override
   public void receiveEditStrings() {
     BaseMod.loadCustomStringsFile(CardStrings.class, "strings/english/cards.json");
+    BaseMod.loadCustomStringsFile(CharacterStrings.class, "strings/english/character.json");
   }
 }
