@@ -9,17 +9,15 @@ import com.megacrit.cardcrawl.powers.WeakPower;
 
 public class GreenFlame extends AbstractFlameCard {
   private static final String ID = "darkfire:GreenFlame";
-  private static final String NAME = "Green Flame";
   private static final String IMG_PATH = "cards/flames/green_flame.png";
   private static final int COST = 0;
-  private static final String DESCRIPTION = "Inflict 1 Weak. Exhaust. Ethereal.";
   private static final CardType TYPE = CardType.STATUS;
   private static final CardRarity RARITY = CardRarity.BASIC;
   private static final CardTarget TARGET = CardTarget.ENEMY;
   private static final int WEAK = 1;
 
   public GreenFlame() {
-    super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, RARITY, TARGET);
+    super(ID, IMG_PATH, COST, TYPE, RARITY, TARGET);
     this.magicNumber = this.baseMagicNumber = WEAK;
     this.exhaust = true;
     this.isEthereal = true;

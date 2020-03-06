@@ -39,6 +39,26 @@
     "NAME":"Wheeling Flame",
     "DESCRIPTION":"Deal !D! damage and draw !M! cards."
   },
+  "darkfire:BlueFlame": {
+    "NAME":"Blue Flame",
+    "DESCRIPTION":"Gain !B! block. Exhaust. Ethereal."
+  },
+  "darkfire:GreenFlame": {
+    "NAME":"Green Flame",
+    "DESCRIPTION":"Inflict !M! Weak. Exhaust. Ethereal."
+  },
+  "darkfire:PurpleFlame": {
+    "NAME":"Purple Flame",
+    "DESCRIPTION":"Deal 6 damage. Exhaust. Ethereal."
+  },
+  "darkfire:RedFlame": {
+    "NAME":"Red Flame",
+    "DESCRIPTION":"Inflict !M! Vulnerable. Exhaust. Ethereal."
+  },
+  "darkfire:YellowFlame": {
+    "NAME":"Yellow Flame",
+    "DESCRIPTION":"Gain !M! energy. Exhaust. Ethereal."
+  },
   "darkfire:FillerPC": {
     "NAME":"Filler",
     "DESCRIPTION":"Filler text."

@@ -9,17 +9,15 @@ import com.megacrit.cardcrawl.powers.VulnerablePower;
 
 public class RedFlame extends AbstractFlameCard {
   private static final String ID = "darkfire:RedFlame";
-  private static final String NAME = "Red Flame";
   private static final String IMG_PATH = "cards/flames/red_flame.png";
   private static final int COST = 0;
-  private static final String DESCRIPTION = "Inflict 1 Vulnerable. Exhaust. Ethereal.";
   private static final CardType TYPE = CardType.STATUS;
   private static final CardRarity RARITY = CardRarity.BASIC;
   private static final CardTarget TARGET = CardTarget.ENEMY;
   private static final int VULNERABLE = 1;
 
   public RedFlame() {
-    super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, RARITY, TARGET);
+    super(ID, IMG_PATH, COST, TYPE, RARITY, TARGET);
     this.magicNumber = this.baseMagicNumber = VULNERABLE;
     this.exhaust = true;
     this.isEthereal = true;
