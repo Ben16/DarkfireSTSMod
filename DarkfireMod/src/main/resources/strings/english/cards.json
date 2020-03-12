@@ -29,7 +29,7 @@
   },
   "darkfire:FlareStorm": {
     "NAME":"Flare Storm",
-    "DESCRIPTION":"Deal !D! damage [E] times. Add [E] flames to your hand."
+    "DESCRIPTION":"Deal !D! damage X times. Add X flames to your hand."
   },
   "darkfire:Strike": {
     "NAME":"Strike",
