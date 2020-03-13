@@ -3,11 +3,13 @@ A new character class mod for Slay the Spire. If you haven't played it, you can 
 
 This mod is built using [Basemod](https://github.com/daviscook477/BaseMod/wiki/Installation) and [Mod the Spire](https://github.com/kiooeht/ModTheSpire).
 
-Note: You'll need to add a lib directory with BaseMod and ModTheSpire jars in it in order to build the mod. This mod will be built to that directory.
+Note: You'll need to add a `lib` directory with BaseMod and ModTheSpire jars in it in order to build the mod. This mod will be built to that directory.
 
 # Details
 ## Character
 The Darkfire is a new character you can select. The selection icon and portrait are my art, as one can probably tell (think of it as placeholder art for an actual artist). The in-game art is just Ironclad, as one can also probably tell.
+
+The Darkfire's cards revolve around exhaution and generating 'Flames' (0-cost, exhaust and ethereal cards that have small effects). As I add more powers and relics, hopefully the cards will have greater synergy with each other.
 
 ## Cards
 * **Ash Spray** - deal 1 damage to each enemy 4 times.
