@@ -29,7 +29,10 @@ The Darkfire's cards revolve around exhaution and generating 'Flames' (0-cost, e
 * **Yellow Flame** - gain 1 energy.
 
 ## Powers
-* **Burning** - gain a flame card at the start of each turn
+* **Burning** - gain a flame card at the start of each turn.
+
+## Relics
+* **Darkwood Tinder** - gain 2 flame cards at the start of each battle. Starter relic.
 
 # References
 I used the [Basemod wiki](https://github.com/daviscook477/BaseMod/wiki/Getting-Started-(For-Modders)

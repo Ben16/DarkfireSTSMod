@@ -80,7 +80,9 @@ public class DarkfireCharacter extends AbstractPlayer {
 
   @Override
   public ArrayList<String> getStartingRelics() {
-    return new ArrayList<String>();
+    ArrayList<String> ret =  new ArrayList<String>();
+    ret.add("darkfire:DarkwoodTinder");
+    return ret;
   }
 
   @Override

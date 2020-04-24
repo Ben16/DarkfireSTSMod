@@ -3,6 +3,7 @@ import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.localization.CharacterStrings;
+import com.megacrit.cardcrawl.localization.RelicStrings;
 
 import java.util.ArrayList;
 
@@ -10,13 +11,15 @@ import basemod.BaseMod;
 import basemod.interfaces.EditCardsSubscriber;
 import basemod.interfaces.EditCharactersSubscriber;
 
+import basemod.interfaces.EditRelicsSubscriber;
 import basemod.interfaces.EditStringsSubscriber;
 import character.AbstractCardEnum;
 import character.DarkfireCharacter;
 import character.DarkfireEnum;
+import relics.DarkwoodTinder;
 
 @SpireInitializer
-public class DarkfireMod implements EditCardsSubscriber, EditCharactersSubscriber, EditStringsSubscriber {
+public class DarkfireMod implements EditCardsSubscriber, EditCharactersSubscriber, EditStringsSubscriber, EditRelicsSubscriber {
   public static final Color EVERYTHING_COLOR = new Color(0, 0, (float)0.54, 1);
   public DarkfireMod() {
     BaseMod.addColor(AbstractCardEnum.DARKFIRE_COLOR, EVERYTHING_COLOR,
@@ -48,8 +51,14 @@ public class DarkfireMod implements EditCardsSubscriber, EditCharactersSubscribe
   }
 
   @Override
+  public void receiveEditRelics() {
+    BaseMod.addRelicToCustomPool(new DarkwoodTinder(), AbstractCardEnum.DARKFIRE_COLOR);
+  }
+
+  @Override
   public void receiveEditStrings() {
     BaseMod.loadCustomStringsFile(CardStrings.class, "strings/english/cards.json");
     BaseMod.loadCustomStringsFile(CharacterStrings.class, "strings/english/character.json");
+    BaseMod.loadCustomStringsFile(RelicStrings.class, "strings/english/relics.json");
   }
 }
